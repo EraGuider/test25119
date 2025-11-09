@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Origin - 投资人推介</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Merriweather (Serif for headers) and Inter (Sans-serif for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        'serif': ['Merriweather', 'ui-serif', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        'gold': {
+                            '100': '#fffbeb',
+                            '200': '#fef3c7',
+                            '300': '#fde68a',
+                            '400': '#fcd34d',
+                            '500': '#facc15', // 主色
+                            '600': '#eab308',
+                            '700': '#ca8a04', // 重点文字
+                            '800': '#a16207',
+                            '900': '#854d0e',
+                        },
+                        'zen': {
+                            '50': '#f8f7f6',  // 极浅米色
+                            '100': '#f1efe9', // 禅室背景
+                            '200': '#e5e1d9',
+                            '700': '#4a453e',
+                            '900': '#2b2925', // 深色文字
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 自定义滚动条样式 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ca8a04; /* gold-700 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a16207; /* gold-800 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+            color: #2b2925; /* zen-900 */
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold font-serif text-zen-900">Celestial Origin</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#opportunity" class="text-gray-700 hover:text-gold-700">市场机遇</a>
+                    <a href="#competitor-analysis" class="text-gray-700 hover:text-gold-700">竞品分析</a>
+                    <a href="#strategy" class="text-gray-700 hover:text-gold-700">核心战略</a>
+                    <a href="#philosophy" class="text-gray-700 hover:text-gold-700">融合哲学</a>
+                    <a href="#funnel" class="text-gray-700 hover:text-gold-700">转化漏斗</a>
+                    <a href="#goals" class="text-gray-700 hover:text-gold-700">项目目标</a>
+                    <a href="#products" class="text-gray-700 hover:text-gold-700">产品矩阵</a>
+                    <a href="#roadmap" class="text-gray-700 hover:text-gold-700">执行路线</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. 英雄区域 (Hero Section) -->
+    <header class="relative bg-zen-50 overflow-hidden">
+        <div class="container mx-auto px-6 py-24 md:py-40 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-zen-900 leading-tight">
+                Celestial Origin
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-700 font-serif max-w-3xl mx-auto">
+                融合东西方智慧的“现代灵性导师”IP
+            </p>
+            <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+                我们瞄准全球“灵性探索者”市场的巨大空白，通过独特的“东西方融合”内容建立权威，以高信任度IP漏斗驱动独立站变现。
+            </p>
+            <a href="#opportunity" class="mt-10 inline-block bg-gold-600 text-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg hover:bg-gold-700 transition duration-300">
+                探索机遇
+            </a>
+        </div>
+        <!-- 装饰性背景元素 -->
+        <div class="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-gold-200/30 rounded-full filter blur-3xl opacity-50"></div>
+        <div class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-96 h-96 bg-gold-200/30 rounded-full filter blur-3xl opacity-50"></div>
+    </header>
+
+    <!-- 2. 市场机遇 (The Opportunity) -->
+    <section id="opportunity" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">市场定位</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">无人区的蓝海战略</h2>
+                <p class="mt-6 text-xl text-gray-700 max-w-3xl mx-auto">
+                    当前灵性赛道两极分化严重，为我们的“融合”定位提供了独一无二的市场切入点。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 西方赛道 (问题) -->
+                <div class="bg-gray-100 p-8 rounded-2xl shadow-sm border border-gray-200">
+                    <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6">
+                        <i class="fa-solid fa-water text-3xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">西方赛道 (红海)</h3>
+                    <p class="text-gray-600">
+                        <strong>问题:</strong> 高度饱和，内容同质化 (#Witchtok)，过度集中于“显化”和“魔法”，缺乏深度哲学支撑。
+                    </p>
+                    <p class="mt-3 text-red-700 font-semibold">用户痛点：不够深刻</p>
+                </div>
+                
+                <!-- 东方赛道 (问题) -->
+                <div class="bg-gray-100 p-8 rounded-2xl shadow-sm border border-gray-200">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                        <i class="fa-solid fa-book text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">东方赛道 (错位)</h3>
+                    <p class="text-gray-600">
+                        <strong>问题:</strong> 过于传统、学术化或宗教化，与TikTok年轻受众追求“美学”和“实用性”的需求脱节。
+                    </p>
+                    <p class="mt-3 text-blue-700 font-semibold">用户痛点：不够实用</p>
+                </div>
+
+                <!-- 我们的机遇 (蓝海) -->
+                <div class="bg-gold-100 p-8 rounded-2xl shadow-lg border border-gold-300 ring-2 ring-gold-200">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gold-600 rounded-full mb-6">
+                        <i class="fa-solid fa-lightbulb text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gold-900">我们的机遇 (蓝海)</h3>
+                    <p class="text-gold-900">
+                        <strong>方案:</strong> 成为“东西方融合”的现代品牌。我们满足“现代探索者”的全部需求：既要西方的“快速显化”，也渴望东方的“内在平衡”。
+                    </p>
+                    <p class="mt-3 text-gold-700 font-bold">定位：身心灵的完整解决方案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.5. 竞品深度分析 (Competitor Analysis) -->
+    <section id="competitor-analysis" class="py-20 md:py-28 bg-zen-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">竞品分析</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">三大竞品赛道详解</h2>
+                <p class="mt-6 text-xl text-gray-700 max-w-3xl mx-auto">
+                    我们精准定位在三大赛道的交叉空白区，形成降维打击。
+                </p>
+            </div>
+
+            <!-- 竞品分类 -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
+                    <h3 class="text-2xl font-bold mb-4">A类: 西方灵性导师IP</h3>
+                    <p class="text-gray-600 mb-4"><strong>代表:</strong> @alexieotto<br><strong>特点:</strong> 纯西方神秘学，重显化、占星。<br><strong>劣势:</strong> 同质化严重，缺乏哲学深度。</p>
+                    <p class="font-semibold text-gold-700"><strong>我方差异化:</strong> 引入东方“气”、“禅”概念，建立哲学权威，降维打击。</p>
+                </div>
+                <div class="border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
+                    <h3 class="text-2xl font-bold mb-4">B类: 传统电商卖家</h3>
+                    <p class="text-gray-600 mb-4"><strong>代表:</strong> TikTok Shop 珠宝商<br><strong>特点:</strong> 货架式销售，价格战。<br><strong>劣势:</strong> 无品牌忠诚度，信任度低。</p>
+                    <p class="font-semibold text-gold-700"><strong>我方差异化:</strong> “导师”定位非“小贩”，内容与销售分离，高信任度转化。</p>
+                </div>
+                <div class="border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
+                    <h3 class="text-2xl font-bold mb-4">C类: 东方传统导师</h3>
+                    <p class="text-gray-600 mb-4"><strong>代表:</strong> 传统瑜伽、佛教导师<br><strong>特点:</strong> 过于学术化、宗教化。<br><strong>劣势:</strong> 缺乏现代感，与TikTok用户脱节。</p>
+                    <p class="font-semibold text-gold-700"><strong>我方差异化:</strong> 现代化包装东方智慧，用“美学”和“实用性”吸引年轻受众。</p>
+                </div>
+            </div>
+
+            <!-- 竞品内容对比表 -->
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-extrabold text-zen-900 mb-8">内容形式对比 (目标)</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                        <thead class="bg-zen-900 text-white">
+                            <tr>
+                                <th class="py-4 px-6 text-left font-semibold">竞品类型</th>
+                                <th class="py-4 px-6 text-left font-semibold">主要形式</th>
+                                <th class="py-4 px-6 text-left font-semibold">平均时长</th>
+                                <th class="py-4 px-6 text-left font-semibold">目标互动率</th>
+                                <th class="py-4 px-6 text-left font-semibold">目标完播率</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-6">A类: 西方导师</td>
+                                <td class="py-4 px-6">仪式展示+口播</td>
+                                <td class="py-4 px-6">60-90s</td>
+                                <td class="py-4 px-6">8-12%</td>
+                                <td class="py-4 px-6">45-60%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="py-4 px-6">B类: 传统电商</td>
+                                <td class="py-4 px-6">产品展示</td>
+                                <td class="py-4 px-6">15-30s</td>
+                                <td class="py-4 px-6">3-5%</td>
+                                <td class="py-4 px-6">25-35%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-6">C类: 东方导师</td>
+                                <td class="py-4 px-6">长视频教学</td>
+                                <td class="py-4 px-6">120-300s</td>
+                                <td class="py-4 px-6">5-8%</td>
+                                <td class="py-4 px-6">30-45%</td>
+                            </tr>
+                            <tr class="bg-gold-100 font-bold text-gold-900">
+                                <td class="py-4 px-6">我们 (目标)</td>
+                                <td class="py-4 px-6">融合口播</td>
+                                <td class="py-4 px-6">45-75s</td>
+                                <td class="py-4 px-6">12-18%</td>
+                                <td class="py-4 px-6">55-70%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 核心战略 (Core Strategy) -->
+    <section id="strategy" class="py-20 md:py-28 bg-zen-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">我们的护城河</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">IP内容为先，独立站变现为后</h2>
+                <p class="mt-6 text-xl text-gray-700 max-w-3xl mx-auto">
+                    我们不是“卖货的”，我们是“导师”。通过“内容与销售分离”策略，建立高信任壁垒并规避平台风险。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="flex items-center justify-center w-20 h-20 bg-gold-100 rounded-full mb-6 mx-auto shadow-sm">
+                        <i class="fa-solid fa-user-graduate text-4xl text-gold-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">“导师”IP 人设</h3>
+                    <p class="text-gray-600">
+                        定位为“现代贤者”，融合东西方智慧。用睿智、权威、温暖的调性，提供“融合”视角（例如：“用‘气’(Qi)来加速你的‘显化’(Manifestation)”）。
+                    </p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="flex items-center justify-center w-20 h-20 bg-gold-100 rounded-full mb-6 mx-auto shadow-sm">
+                        <i class="fa-solid fa-shield-halved text-4xl text-gold-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">规避风险</h3>
+                    <p class="text-gray-600">
+                        TikTok仅作为内容阵地，不挂小黄车。所有商业转化引导至Shopify独立站。此举可规避平台电商审核红线及内容审查风险。
+                    </p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="flex items-center justify-center w-20 h-20 bg-gold-100 rounded-full mb-6 mx-auto shadow-sm">
+                        <i class="fa-solid fa-database text-4xl text-gold-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">私域资产</h3>
+                    <p class="text-gray-600">
+                        真正的护城河是Email List。我们用“知识型磁铁”（如PDF指南）而非“折扣券”来获取用户，确保私域流量的高质量和高复购潜力。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 新增：运营策略强化 -->
+            <div class="mt-20 pt-16 border-t border-gold-200">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl font-extrabold text-zen-900 sm:text-5xl">精细化运营策略</h3>
+                    <p class="mt-6 text-xl text-gray-700 max-w-3xl mx-auto">
+                        通过“账号矩阵”和“AI内容SOP”实现可规模化的内容护城河。
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- 1+3+N 账号矩阵 -->
+                    <div>
+                        <h4 class="text-3xl font-bold mb-6 text-gold-800">"1+3+N" 账号矩阵</h4>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gold-600 text-white rounded-full shadow-lg mr-5">
+                                    <span class="font-bold text-2xl">1</span>
+                                </div>
+                                <div>
+                                    <h5 class="text-xl font-bold">核心IP号 (@Celestial_Guru)</h5>
+                                    <p class="text-gray-600">品牌权威建立，高价值内容输出，承接所有矩阵流量。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gold-500 text-white rounded-full shadow-lg mr-5">
+                                    <span class="font-bold text-2xl">3</span>
+                                </div>
+                                <div>
+                                    <h5 class="text-xl font-bold">引流测试号 (矩阵)</h5>
+                                    <p class="text-gray-600">内容“赛马”先锋 (如：禅意、水晶、能量)，测试爆款模型，反哺主号。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gold-400 text-zen-900 rounded-full shadow-lg mr-5">
+                                    <span class="font-bold text-2xl">N</span>
+                                </div>
+                                <div>
+                                    <h5 class="text-xl font-bold">备用IP号 (矩阵)</h5>
+                                    <p class="text-gray-600">热备份核心内容，风险对冲，确保商业链路在极端情况下永不断裂。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- AI 内容 SOP -->
+                    <div>
+                        <h4 class="text-3xl font-bold mb-6 text-gold-800">AI 辅助内容SOP</h4>
+                        <ol class="list-decimal list-inside space-y-4 text-gray-700 text-lg">
+                            <li class="font-semibold">扒取阶段: <span class="font-normal">每日监控竞品高播放量内容。</span></li>
+                            <li class="font-semibold">分析阶段: <span class="font-normal">使用AI工具分析爆款元素。</span></li>
+                            <li class="font-semibold">重构阶段: <span class="font-normal">用“东西方融合”视角重写脚本 (关键壁垒)。</span></li>
+                            <li class="font-semibold">优化阶段: <span class="font-normal">注入“气”、“阴阳”等东方哲学概念，提升深度。</span></li>
+                            <li class="font-semibold">生产阶段: <span class="font-normal">AI配音 (统一导师声线) + 高质量美学剪辑。</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3.5. 东西方融合哲学 (The Philosophy) -->
+    <section id="philosophy" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">内容核心</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">融合哲学：我们的内容壁垒</h2>
+                <p class="mt-6 text-xl text-gray-700 max-w-3xl mx-auto">
+                    我们不创造概念，我们连接概念。通过融合，我们提供更完整、更深刻的解决方案。
+                </p>
+            </div>
+
+            <!-- 新增：东西方智慧的完美融合 -->
+            <div class="text-center mb-20">
+                <span class="inline-block bg-gold-100 text-gold-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">融合哲学</span>
+                <h3 class="text-3xl font-extrabold text-zen-900 sm:text-4xl mb-4">东西方智慧的完美融合</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    将东方的“气”与西方的“能量”，东方的“经络”与西方的“脉轮”，东方的“五行”与西方的“显化”完美融合，创造出独特的灵性体验。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+                <!-- 阴阳-星座 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mx-auto mb-6">
+                        <i class="fa-solid fa-yin-yang text-3xl text-red-600"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">阴阳-星座</h4>
+                    <p class="text-gray-600 mb-4">将东方阴阳五行与西方星座学结合，创造出独特的个人能量解读体系。</p>
+                    <ul class="text-left text-gray-600 list-disc list-inside space-y-1">
+                        <li>阴阳平衡 x 星座特质</li>
+                        <li>太极图 x 星盘图</li>
+                        <li>五行生克 x 行星相位</li>
+                    </ul>
+                </div>
+                <!-- 经络-脉轮 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-6">
+                        <i class="fa-solid fa-sitemap text-3xl text-blue-600"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">经络-脉轮</h4>
+                    <p class="text-gray-600 mb-4">将中医经络理论与印度脉轮系统融合，构建完整的能量流动网络。</p>
+                    <ul class="text-left text-gray-600 list-disc list-inside space-y-1">
+                        <li>十二经络 x 七轮系统</li>
+                        <li>气血运行 x 能量中心</li>
+                        <li>穴位按摩 x 脉轮激活</li>
+                    </ul>
+                </div>
+                <!-- 五行-显化 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-6">
+                        <i class="fa-solid fa-leaf text-3xl text-green-600"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">五行-显化</h4>
+                    <p class="text-gray-600 mb-4">将五行相生相克原理与现代显化法则结合，创造高效的愿望实现方法。</p>
+                    <ul class="text-left text-gray-600 list-disc list-inside space-y-1">
+                        <li>木火土金水 x 吸引力法则</li>
+                        <li>生克制化 x 能量频率</li>
+                        <li>季节养生 x 显化时机</li>
+                    </ul>
+                </div>
+                <!-- 气-能量 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mx-auto mb-6">
+                        <i class="fa-solid fa-atom text-3xl text-purple-600"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">气-能量</h4>
+                    <p class="text-gray-600 mb-4">将东方“气”的概念与西方“能量场”概念统一，构建通用的生命力理论。</p>
+                    <ul class="text-left text-gray-600 list-disc list-inside space-y-1">
+                        <li>气功修炼 x 能量冥想</li>
+                        <li>气场感应 x 能量感知</li>
+                        <li>调息吐纳 x 能量净化</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 新增：融合方法学 -->
+            <div class="bg-zen-50 p-10 rounded-2xl shadow-inner border border-zen-200">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-extrabold text-zen-900 sm:text-4xl mb-4">融合方法学</h3>
+                </div>
+                <!-- 
+                  On Desktop (md+): flex-row, horizontal lines shown, items have equal width.
+                  On Mobile (<md): flex-col, vertical lines shown, items are full width.
+                -->
+                <div class="relative flex flex-col md:flex-row justify-center items-center max-w-4xl mx-auto">
+                    <!-- 步骤1 -->
+                    <div class="flex flex-col items-center text-center w-full md:max-w-xs p-4">
+                        <div class="flex items-center justify-center w-20 h-20 bg-gold-600 text-white rounded-full shadow-lg text-3xl font-bold mb-4 flex-shrink-0">1</div>
+                        <h4 class="text-xl font-bold mb-2">概念映射</h4>
+                        <p class="text-gray-600">找到东西方概念的对应关系，如“气”对应“能量”，“经络”对应“能量通道”。</p>
+                    </div>
+                    
+                    <!-- Mobile Vertical Line -->
+                    <div class="w-1 h-16 bg-gold-200 md:hidden"></div>
+                    <!-- Desktop Horizontal Line: 修复：移除了 flex-grow 和 w-full, 添加了固定的 w-16 -->
+                    <div class="h-1 bg-gold-200 w-16 hidden md:block mx-4"></div>
+
+                    <!-- 步骤2 -->
+                    <div class="flex flex-col items-center text-center w-full md:max-w-xs p-4">
+                        <div class="flex items-center justify-center w-20 h-20 bg-gold-600 text-white rounded-full shadow-lg text-3xl font-bold mb-4 flex-shrink-0">2</div>
+                        <h4 class="text-xl font-bold mb-2">互补整合</h4>
+                        <p class="text-gray-600">利用两种体系的优势互补，如用西方科学解释东方玄学，用东方智慧深化西方技巧。</p>
+                    </div>
+
+                    <!-- Mobile Vertical Line -->
+                    <div class="w-1 h-16 bg-gold-200 md:hidden"></div>
+                    <!-- Desktop Horizontal Line: 修复：移除了 flex-grow 和 w-full, 添加了固定的 w-16 -->
+                    <div class="h-1 bg-gold-200 w-16 hidden md:block mx-4"></div>
+
+                    <!-- 步骤3 -->
+                    <div class="flex flex-col items-center text-center w-full md:max-w-xs p-4">
+                        <div class="flex items-center justify-center w-20 h-20 bg-gold-600 text-white rounded-full shadow-lg text-3xl font-bold mb-4 flex-shrink-0">3</div>
+                        <h4 class="text-xl font-bold mb-2">实践验证</h4>
+                        <p class="text-gray-600">通过实际应用验证融合效果，根据用户反馈不断优化融合方法。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新增：实践案例 -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 融合冥想练习 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                    <h4 class="text-2xl font-bold mb-6 text-gold-800">实践案例: 融合冥想练习</h4>
+                    <div class="space-y-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h5 class="font-bold text-zen-900">第一步: 调息 (东方)</h5>
+                            <p class="text-gray-600">采用道家呼吸法，调整气息节奏，使身心放松。</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h5 class="font-bold text-zen-900">第二步: 脉轮激活 (西方)</h5>
+                            <p class="text-gray-600">从根轮到顶轮，逐一激活七个能量中心。</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h5 class="font-bold text-zen-900">第三步: 经络疏通 (东方)</h5>
+                            <p class="text-gray-600">意念引导气息沿十二经络运行，疏通阻塞。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 融合水晶疗法 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                    <h4 class="text-2xl font-bold mb-6 text-gold-800">实践案例: 融合水晶疗法</h4>
+                    <div class="space-y-4">
+                        <div class="bg-gold-100/60 p-4 rounded-lg">
+                            <h5 class="font-bold text-gold-900">五行属性 (东方)</h5>
+                            <p class="text-gray-700">根据五行理论选择水晶：木-绿幽灵, 火-红玛瑙, 土-黄水晶, 金-白水晶, 水-黑曜石。</p>
+                        </div>
+                        <div class="bg-gold-100/60 p-4 rounded-lg">
+                            <h5 class="font-bold text-gold-900">脉轮对应 (西方)</h5>
+                            <p class="text-gray-700">根据脉轮颜色选择水晶：红-根轮, 橙-脐轮, 黄-太阳轮, 绿-心轮, 蓝-喉轮, 靛-眉心轮, 紫-顶轮。</p>
+                        </div>
+                        <div class="bg-gold-100/60 p-4 rounded-lg">
+                            <h5 class="font-bold text-gold-900">经络穴位 (东方)</h5>
+                            <p class="text-gray-700">将对应水晶放置于关键穴位（如心包经-内关穴），放大能量效果。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. 转化漏斗 (The Funnel) -->
+    <section id="funnel" class="py-20 md:py-28 bg-zen-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">高信任度转化路径</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">单向高信任度漏斗</h2>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-4">
+                
+                <!-- 步骤 1: 触达 (Reach) -->
+                <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                    <div class="flex items-center justify-center w-24 h-24 bg-gold-600 text-white rounded-full shadow-lg">
+                        <i class="fa-solid fa-lightbulb text-4xl"></i>
+                    </div>
+                    <h3 class="mt-6 text-2xl font-bold">1. 价值内容 (Content)</h3>
+                    <p class="mt-2 text-gray-600">TikTok公域：用户被“融合导师”IP的价值口播内容吸引 (软性植入)。</p>
+                </div>
+
+                <!-- 箭头 -->
+                <div class="text-gold-400 text-4xl transform rotate-90 md:rotate-0">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+
+                <!-- 步骤 2: 引导 (Redirect) -->
+                <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                    <div class="flex items-center justify-center w-24 h-24 bg-gold-600 text-white rounded-full shadow-lg">
+                        <i class="fa-solid fa-arrow-pointer text-4xl"></i>
+                    </div>
+                    <h3 class="mt-6 text-2xl font-bold">2. 非销售型CTA</h3>
+                    <p class="mt-2 text-gray-600">“非销售型”CTA (如“获取指南”) 引导用户点击 Bio Link 分流站。</p>
+                </div>
+
+                <!-- 箭头 -->
+                <div class="text-gold-400 text-4xl transform rotate-90 md:rotate-0">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+
+                <!-- 步骤 3: 转化 (Convert) -->
+                <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                    <div class="flex items-center justify-center w-24 h-24 bg-gold-600 text-white rounded-full shadow-lg">
+                        <i class="fa-solid fa-store text-4xl"></i>
+                    </div>
+                    <h3 class="mt-6 text-2xl font-bold">3. 独立站转化</h3>
+                    <p class="mt-2 text-gray-600">Shopify独立站：在“品牌殿堂”中完成高信任度购买。</p>
+                </div>
+
+                <!-- 箭头 -->
+                <div class="text-gold-400 text-4xl transform rotate-90 md:rotate-0">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+
+                <!-- 步骤 4: 沉淀 (Own) -->
+                <div class="flex flex-col items-center text-center w-full md:w-1/4">
+                    <div class="flex items-center justify-center w-24 h-24 bg-gold-600 text-white rounded-full shadow-lg">
+                        <i class="fa-solid fa-database text-4xl"></i>
+                    </div>
+                    <h3 class="mt-6 text-2xl font-bold">4. 私域沉淀</h3>
+                    <p class="mt-2 text-gray-600">通过“免费指南”等磁铁，将公域流量沉淀为高价值 Email List 私域资产。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 核心目标 (Key Goals) -->
+    <section id="goals" class="py-20 md:py-28 bg-gold-100/60">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">增长目标 (12个月)</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">可量化的成功指标</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 目标 1: IP 地位 -->
+                <div class="bg-white p-10 rounded-2xl shadow-xl transform hover:scale-105 transition duration-300 text-center">
+                    <div class="text-7xl font-extrabold font-serif text-gold-700 mb-4">100万+</div>
+                    <h3 class="text-2xl font-bold mb-3">IP 地位</h3>
+                    <p class="text-gray-600">成为TikTok“融合灵性”垂类的头部内容IP，奠定“导师”权威。</p>
+                </div>
+
+                <!-- 目标 2: 商业目标 -->
+                <div class="bg-white p-10 rounded-2xl shadow-xl transform hover:scale-105 transition duration-300 text-center">
+                    <div class="text-7xl font-extrabold font-serif text-gold-700 mb-4">$50k+</div>
+                    <h3 class="text-2xl font-bold mb-3">月度 GMV</h3>
+                    <p class="text-gray-600">通过独立站实现稳定月度GMV，验证高客单价、高利润的商业模式。</p>
+                </div>
+
+                <!-- 目标 3: 私域构建 -->
+                <div class="bg-white p-10 rounded-2xl shadow-xl transform hover:scale-105 transition duration-300 text-center">
+                    <div class="text-7xl font-extrabold font-serif text-gold-700 mb-4">10k+</div>
+                    <h3 class="text-2xl font-bold mb-3">高价值私域</h3>
+                    <p class="text-gray-600">获取高价值Email List，构建防封锁的核心资产，并测试更高客单价的知识付费产品。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 产品矩阵 (Product Lines) -->
+    <section id="products" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">变现核心</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">产品即“哲学工具”</h2>
+                <p class="mt-6 text-xl text-gray-700 max-w-3xl mx-auto">
+                    我们的产品是“身心平衡的工具”，是IP“融合智慧”的有形延伸。每一件产品都附带“指导卡”，注入品牌叙事价值。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 产品线 1 -->
+                <div class="border border-gray-200 rounded-2xl p-8 transform hover:shadow-lg transition duration-300 flex flex-col">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-zen-100 rounded-full mb-6">
+                        <i class="fa-solid fa-circle-nodes text-3xl text-gold-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">“经络-脉轮”平衡系列</h3>
+                    <p class="text-gray-600 flex-grow">
+                        将西方的“七脉轮”(Chakras) 与东方的“经络”(Meridians) 概念结合。产品叙事：不仅是激活脉轮，更是打通全身“气”(Qi)的流转。
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <span class="inline-block bg-gold-100 text-gold-800 text-sm font-semibold px-3 py-1 rounded-full mr-2">入门级</span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">价格: $39-89</span>
+                    </div>
+                </div>
+                
+                <!-- 产品线 2 -->
+                <div class="border border-gray-200 rounded-2xl p-8 transform hover:shadow-lg transition duration-300 flex flex-col">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-zen-100 rounded-full mb-6">
+                        <i class="fa-solid fa-star text-3xl text-gold-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">“五行-显化”护符系列</h3>
+                    <p class="text-gray-600 flex-grow">
+                        引入东方“五行”(Wu Xing)平衡哲学。产品叙事：“显化”不是索取，而是通过“五行”能量的平衡与流动（如“水”主财富）创造丰盛。
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <span class="inline-block bg-gold-100 text-gold-800 text-sm font-semibold px-3 py-1 rounded-full mr-2">进阶级</span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">价格: $89-159</span>
+                    </div>
+                </div>
+
+                <!-- 产品线 3 -->
+                <div class="border border-gray-200 rounded-2xl p-8 transform hover:shadow-lg transition duration-300 flex flex-col">
+                    <div class="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-zen-100 rounded-full mb-6">
+                        <i class="fa-solid fa-moon text-3xl text-gold-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">“阴阳-星座”守护系列</h3>
+                    <p class="text-gray-600 flex-grow">
+                        重新定义西方星座。产品叙事：真正的守护，是帮助你的星座能量（如白羊座的“阳”火）回归“阴阳平衡”（如使用月光石）。
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <span class="inline-block bg-gold-100 text-gold-800 text-sm font-semibold px-3 py-1 rounded-full mr-2">高阶级</span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">价格: $159-299</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 执行路线 (Roadmap) -->
+    <section id="roadmap" class="py-20 md:py-28 bg-zen-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-base font-semibold text-gold-700 tracking-wide uppercase">执行计划</span>
+                <h2 class="mt-2 text-4xl font-extrabold text-zen-900 sm:text-5xl">12个月三步走</h2>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <!-- 竖线 -->
+                <div class="absolute left-4 md:left-1/2 top-0 h-full w-1 bg-gold-200 -translate-x-1/2"></div>
+
+                <!-- 阶段 1 -->
+                <div class="relative mb-12">
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 bg-gold-600 rounded-full -translate-x-1/2 mt-1 border-4 border-white shadow-md"></div>
+                    <div class="md:flex md:items-center md:justify-between">
+                        <div class="md:w-1/2 md:pr-12">
+                            <!-- 在小屏幕上隐藏，只在右侧显示内容 -->
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 ml-12 md:ml-0">
+                            <div class="bg-white p-6 rounded-xl shadow-lg">
+                                <span class="text-sm font-semibold text-gold-700">阶段一 (1-3月)</span>
+                                <h3 class="text-xl font-bold mt-1 mb-2">奠基与冷启动</h3>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>完成“导师”IP人设与视觉SOP</li>
+                                    <li>AI辅助内容流跑通 (生产50+视频)</li>
+                                    <li>Shopify独立站搭建与首单验证</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 阶段 2 -->
+                <div class="relative mb-12">
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 bg-gold-600 rounded-full -translate-x-1/2 mt-1 border-4 border-white shadow-md"></div>
+                    <div class="md:flex md:items-center md:justify-between">
+                        <div class="md:w-1/2 md:pr-12">
+                            <div class="bg-white p-6 rounded-xl shadow-lg md:text-right ml-12 md:ml-0">
+                                <span class="text-sm font-semibold text-gold-700">阶段二 (4-6月)</span>
+                                <h3 class="text-xl font-bold mt-1 mb-2">规模化增长</h3>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1 text-left md:text-right">
+                                    <li>放大爆款内容模型 (目标: 50万粉丝)</li>
+                                    <li>优化供应链 (核心品备货至3PL)</li>
+                                    <li>私域激活 (Email List 突破 5,000)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12">
+                             <!-- 在小屏幕上隐藏，只在左侧显示内容 -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 阶段 3 -->
+                <div class="relative mb-12">
+                    <div class="absolute left-4 md:left-1/2 w-8 h-8 bg-gold-600 rounded-full -translate-x-1/2 mt-1 border-4 border-white shadow-md"></div>
+                    <div class="md:flex md:items-center md:justify-between">
+                         <div class="md:w-1/2 md:pr-12">
+                            <!-- 在小屏幕上隐藏，只在右侧显示内容 -->
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 ml-12 md:ml-0">
+                            <div class="bg-white p-6 rounded-xl shadow-lg">
+                                <span class="text-sm font-semibold text-gold-700">阶段三 (7-12月)</span>
+                                <h3 class="text-xl font-bold mt-1 mb-2">建立权威与生态扩展</h3>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>奠定垂类第一IP地位 (目标: 100万粉丝)</li>
+                                    <li>私域引爆 (BFCM大促)</li>
+                                    <li>扩展高客单价“知识付费”产品</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 页脚 (Footer) -->
+    <footer class="bg-zen-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-serif text-white mb-2">Celestial Origin</p>
+            <p>&copy; 2025 Celestial Origin. All rights reserved.</p>
+            <p class="text-sm mt-1">融合东西方智慧 | 赋能现代探索者</p>
+        </div>
+    </footer>
+
+</body>
+</html>
